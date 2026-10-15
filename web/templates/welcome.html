@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="of-hero text-white p-4 p-md-5 rounded mt-3 mb-4">
+    <h3>Bienvenido {{ user.get_username }}</h3>
+    <p class="mb-3">Tenemos una lista de productos exclusivos para ti. ¿Quieres conocer más?</p>
+    <a href="{% url 'contacto' %}" class="btn btn-outline-light">Contáctanos</a>
+</div>
+
+<div class="row">
+    {% for flan in flanes %}
+    <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+            <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ flan.name }}</h5>
+                <p class="card-text">{{ flan.description }}</p>
+                <p class="card-text"><strong>${{ flan.price }}</strong></p>
+                <a href="{% url 'flan_detalle' flan.slug %}" class="btn btn-sm btn-outline-dark">Ver detalle</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-center">No hay flanes especiales por ahora.</p>
+    {% endfor %}
+</div>
+{% endblock %}

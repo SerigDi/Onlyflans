@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h3 class="text-center mt-3 mb-4">Nuestros Flanes</h3>
+<div class="row">
+    {% for flan in flanes %}
+    <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+            <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ flan.name }}</h5>
+                <p class="card-text">{{ flan.description }}</p>
+                <p class="card-text"><strong>${{ flan.price }}</strong></p>
+                <a href="{% url 'flan_detalle' flan.slug %}" class="btn btn-sm btn-outline-dark">Ver detalle</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-center">Aún no hay flanes disponibles.</p>
+    {% endfor %}
+</div>
+{% endblock %}

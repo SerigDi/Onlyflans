@@ -1,0 +1,15 @@
+# Entornos virtuales
+venv/
+.venv/
+onlyflans/pyvenv.cfg
+# Python
+__pycache__/
+*.pyc
+# Base de datos local y archivos de entorno
+db.sqlite3
+.env
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

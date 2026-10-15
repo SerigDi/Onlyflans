@@ -1,0 +1,100 @@
+/* OnlyFlans - paleta caramelo, armonizada con el logo */
+:root {
+    --bs-primary: #b5651d;
+    --bs-primary-rgb: 181, 101, 29;
+    --bs-link-color: #b5651d;
+    --bs-link-hover-color: #8a4d16;
+    --of-cream: #fff8f0;
+    --of-caramel: #b5651d;
+    --of-caramel-dark: #8a4d16;
+}
+
+body {
+    background-color: var(--of-cream);
+}
+
+/* Header: fondo blanco para que el logo se vea limpio, con linea caramelo abajo */
+.of-header {
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--of-caramel);
+}
+
+/* Navbar con tono crema para armonizar */
+.of-navbar {
+    background-color: #fff3e0 !important;
+}
+
+.of-navbar .nav-link {
+    color: #5a3a1a;
+    font-weight: 500;
+}
+
+.of-navbar .nav-link:hover {
+    color: var(--of-caramel-dark);
+}
+
+/* Cards: imagenes con tamaño fijo y recorte parejo, con efecto hover */
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(181, 101, 29, 0.25);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--of-caramel-dark);
+    font-weight: 600;
+}
+
+/* Botones: efecto suave al pasar el mouse */
+.btn {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--of-caramel);
+    border-color: var(--of-caramel);
+}
+
+.btn-primary:hover {
+    background-color: var(--of-caramel-dark);
+    border-color: var(--of-caramel-dark);
+}
+
+.btn-outline-dark {
+    color: var(--of-caramel-dark);
+    border-color: var(--of-caramel-dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--of-caramel-dark);
+    border-color: var(--of-caramel-dark);
+}
+
+/* Banner de bienvenida (dark hero) con acento caramelo */
+.of-hero {
+    background-color: #2b2118;
+    border-top: 4px solid var(--of-caramel);
+}
+
+/* Footer */
+.of-footer {
+    background-color: #2b2118 !important;
+}

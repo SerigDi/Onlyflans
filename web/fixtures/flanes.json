@@ -1,0 +1,106 @@
+[
+  {
+    "model": "web.flan",
+    "pk": 1,
+    "fields": {
+      "flan_uuid": "ab3d2b55-09e1-4679-9dd1-e7a421f89c6b",
+      "name": "Flan Clásico",
+      "description": "El flan tradicional de siempre, suave y cremoso.",
+      "image_url": "https://picsum.photos/seed/publico1/400/300",
+      "slug": "flan-clasico",
+      "is_private": false,
+      "price": 2500
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 2,
+    "fields": {
+      "flan_uuid": "867d6b60-6cc0-4fb0-b08a-61ff496a013b",
+      "name": "Flan de Caramelo",
+      "description": "Con un intenso baño de caramelo casero.",
+      "image_url": "https://picsum.photos/seed/publico2/400/300",
+      "slug": "flan-de-caramelo",
+      "is_private": false,
+      "price": 2800
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 3,
+    "fields": {
+      "flan_uuid": "d6497dc2-9667-44d8-a970-bbb16636adb6",
+      "name": "Flan de Coco",
+      "description": "Un toque tropical con coco rallado natural.",
+      "image_url": "https://picsum.photos/seed/publico3/400/300",
+      "slug": "flan-de-coco",
+      "is_private": false,
+      "price": 3000
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 4,
+    "fields": {
+      "flan_uuid": "5e6abbb7-3d72-4d62-a8d5-2e85ef503ec0",
+      "name": "Flan de Chocolate",
+      "description": "Cremoso y con cobertura de chocolate amargo.",
+      "image_url": "https://picsum.photos/seed/publico4/400/300",
+      "slug": "flan-de-chocolate",
+      "is_private": false,
+      "price": 3200
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 5,
+    "fields": {
+      "flan_uuid": "fbb732c9-995d-404b-940f-9497739e7c09",
+      "name": "Flan Edición Limitada",
+      "description": "Disponible solo para clientes preferenciales.",
+      "image_url": "https://picsum.photos/seed/privado1/400/300",
+      "slug": "flan-edicion-limitada",
+      "is_private": true,
+      "price": 4500
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 6,
+    "fields": {
+      "flan_uuid": "f107e5fb-8582-448a-ae6c-1376f9783373",
+      "name": "Flan de Dulce de Leche",
+      "description": "Receta especial reservada para eventos.",
+      "image_url": "https://picsum.photos/seed/privado2/400/300",
+      "slug": "flan-de-dulce-de-leche",
+      "is_private": true,
+      "price": 4800
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 7,
+    "fields": {
+      "flan_uuid": "0b7cf21d-b9d9-4850-8f1d-5eacb614d211",
+      "name": "Flan de Queso",
+      "description": "Nuestra creación secreta, aún en degustación.",
+      "image_url": "https://picsum.photos/seed/privado3/400/300",
+      "slug": "flan-de-queso",
+      "is_private": true,
+      "price": 4200
+    }
+  },
+  {
+    "model": "web.flan",
+    "pk": 8,
+    "fields": {
+      "flan_uuid": "449b1155-c0c4-436e-b25f-cba2909950e1",
+      "name": "Flan Tres Leches",
+      "description": "Edición especial no disponible al público general.",
+      "image_url": "https://picsum.photos/seed/privado4/400/300",
+      "slug": "flan-tres-leches",
+      "is_private": true,
+      "price": 5000
+    }
+  }
+]
